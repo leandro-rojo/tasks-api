@@ -1,0 +1,25 @@
+@api = http://localhost:3500
+
+GET {{api}}/tasks
+###
+GET {{api}}/tasks/count
+###
+GET {{api}}/tasks/2
+###
+POST {{api}}/tasks
+Content-Type: application/json
+
+{
+    "title": "Prueba Base remota 2",
+    "description": "Descripcion 11111"
+}
+###
+DELETE {{api}}/tasks/4
+###
+PUT {{api}}/tasks/2
+Content-Type: application/json
+
+{
+    "title": "Prueba Base remota 2",
+    "description": "Descripcion bien escrita"
+}
